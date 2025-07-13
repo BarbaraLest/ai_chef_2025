@@ -1,13 +1,12 @@
-import 'package:ai_chef/src/datasources/gemini_remote_datasource.dart';
 import 'package:ai_chef/src/datasources/local_db_datasource.dart';
 import 'package:ai_chef/src/services/interfaces/recipe_service_interface.dart';
 
 import '../models/recipe_model.dart';
 
-class RecipeRepositoryImpl implements RecipeServiceInterface {
+class RecipeServiceImpl implements RecipeServiceInterface {
   final LocalDBDataSource localDataSource;
 
-  RecipeRepositoryImpl({
+  RecipeServiceImpl({
     required this.localDataSource,
   });
 

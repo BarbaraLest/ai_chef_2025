@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         Provider<RecipeServiceInterface>(
-          create: (context) => RecipeRepositoryImpl(
+          create: (context) => RecipeServiceImpl(
             localDataSource: context.read<LocalDBDataSource>(),
           ),
         ),
